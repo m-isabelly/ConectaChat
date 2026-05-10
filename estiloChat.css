@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: url(fundo.jpg);
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+.container-fluid {
+    max-width: 1100px;
+}
+
+.card {
+    height: 400px;
+    border-radius: 15px !important;
+    background: transparent !important;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: white;
+}
+
+.lista-contatos {
+    padding: 0.75rem 0 !important;
+    overflow-y: auto;
+    white-space: nowrap;
+}
+
+.area-mensagens {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    padding: 15px;
+}
+
+.card-header {
+    border-radius: 15px 15px 0 0 !important;
+    border-bottom: 0 !important;
+}
+
+.card-footer {
+    border-radius: 0 0 15px 15px !important;
+    border-top: 0 !important;
+}
+
+.campo-pesquisa {
+    border-radius: 15px !important;
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    border: 0 !important;
+    color: white !important;
+}
+
+.campo-pesquisa:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.campo-mensagem {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    border: 0 !important;
+    color: white !important;
+    height: 60px !important;
+}
+
+.campo-mensagem:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.botao-enviar {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    border: 0 !important;
+    color: white !important;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.contatos {
+    list-style: none;
+    padding: 0;
+}
+
+.contatos li {
+    width: 100%;
+    padding: 5px 10px;
+    margin-bottom: 15px !important;
+}
+
+.ativo {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.foto-usuario {
+    height: 60px;
+    width: 60px;
+    border: 1.5px solid #f5f6fa;
+    border-radius: 50%;
+}
+
+.foto-area {
+    position: relative;
+    height: 70px;
+    width: 70px;
+}
+
+.status {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    bottom: 13px;
+    right: 13px;
+    border: 1.5px solid white;
+    background-color: #4cd137;
+}
+
+.offline {
+    background-color: #c23616 !important;
+}
+
+.info-usuario {
+    margin: auto 0 auto 15px;
+}
+
+.info-usuario span {
+    font-size: 20px;
+    color: white;
+}
+
+.info-usuario p {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.topo-chat {
+    position: relative;
+}
+
+.menu-chat {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.chat-escondido {
+    display: none !important;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #b887ddef;
+    margin-bottom: 10px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-area i {
+    font-size: 32px;
+    color: #ffffff;
+}
+
+.logo-area h1 {
+    margin: 0;
+    font-family: "Yeseva One", serif;
+    color: #ffffff;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(254, 254, 254);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8456a7db;
+    padding: 1px 40px;
+    margin-top: 10px;
+}
+
+.footer-logo {
+    width: 230px;
+}
+
+.footer-text {
+    text-align: right;
+    font-weight: 600;
+}
+
+.footer-text p {
+    margin: 3px 0;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.msg {
+    background-color: #8e43ad;
+    color: white;
+
+    padding: 10px 15px;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    width: fit-content;
+
+    margin-left: auto;
+    margin-bottom: 10px;
+
+    max-width: 70%;
+    word-break: break-word;
+}
+
+.texto-msg {
+    font-size: 14px;
+}
+
+.check-msg {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.referencias {
+  font-size: 12px;
+  margin-top: 6px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.referencias a {
+  color: #ffffff;
+  text-decoration: underline;
+}

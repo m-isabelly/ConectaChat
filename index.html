@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConectaChat</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="estiloIndex.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo-area">
+            <i class='bx bx-message'></i>
+            <h1>ConectaChat</h1>
+        </div>
+
+        <nav>
+            <a href="desenvolvedor.html">Desenvolvedores</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="formulario">
+            <form id="loginForm">
+                <h1>Preencha</h1>
+                <div class="input-box">
+                    <input type="text" id="usuario" placeholder="Usuário">
+                    <i class='bx bx-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="senha" placeholder="Senha">
+                    <i class='bx bx-lock-alt'></i>
+                </div>
+                <button type="submit" class="btn">Logar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <img src="logoIF.png" alt="Logo IFRN" class="footer-logo">
+
+        <div class="footer-text">
+            <p>Trabalho de Programação para Internet</p>
+            <p>Prof. Marcelo Figueiredo Barbosa Júnior</p>
+
+            <p class="referencias">
+                Referências: CSS3, HTML5, JavaScript, Bootstrap, Boxicons,
+                Font Awesome e
+                <a href="https://onaircode.com/html-css-chat-box-examples/" target="_blank">
+                    layouts de inspiração
+                </a>
+            </p>
+            <p>© 2026 Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="loginAuth.js"></script>
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", login);
+    </script>
+    
+</body>
+
+</html>

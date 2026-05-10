@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: url(fundo.jpg);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  width: 100%;
+}
+
+button,
+a,
+input,
+textarea,
+select,
+form {
+  cursor: url('espada.png'), auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #b887ddef;
+  margin-bottom: 10px;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-area i {
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.logo-area h1 {
+  margin: 0;
+  font-family: "Yeseva One", serif;
+  color: #ffffff;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(254, 254, 254);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+.card {
+  flex: 1;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 250px;
+  max-width: 100%;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.card img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.card h2 {
+  margin: 1rem 0 0.5rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.card button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #8e4398;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: url('espada.png'), auto;
+  font-family: 'Monocraft', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #5a1c61;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #f0f0f0;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8456a7db;
+  padding: 5px 40px;
+  margin-top: 10px;
+}
+
+.footer-logo {
+  width: 230px;
+}
+
+.footer-text {
+  text-align: right;
+  font-weight: 600;
+}
+
+.footer-text p {
+  margin: 3px 0;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.referencias {
+  font-size: 12px;
+  margin-top: 6px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.referencias a {
+  color: #ffffff;
+  text-decoration: underline;
+}
