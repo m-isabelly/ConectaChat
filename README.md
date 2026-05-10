@@ -1,2 +1,2 @@
 # ConectaChat
-Trabalho do curso de Informática da matéria "Programação para Internet" no IFRN Campus Santa Cruz.
+Trabalho de Chat de mensagens desenvolvido pelos alunos do curso técnico em Informática, na disciplina de Programação para Internet.
